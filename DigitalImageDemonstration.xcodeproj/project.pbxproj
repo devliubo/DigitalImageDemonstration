@@ -24,6 +24,26 @@
 		3A5695461FCE997800116218 /* CameraBufferToTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695451FCE997800116218 /* CameraBufferToTexture.m */; };
 		3A5695491FCE99AB00116218 /* CameraBufferToTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695481FCE99AB00116218 /* CameraBufferToTextureView.m */; };
 		3A5695531FCFE31D00116218 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695521FCFE31D00116218 /* MapKitViewController.swift */; };
+		3AD2114B1FD923C20057E61D /* ARExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2114A1FD923C20057E61D /* ARExampleViewController.m */; };
+		3AD2114E1FD924A60057E61D /* ARExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2114D1FD924A60057E61D /* ARExampleViewController.swift */; };
+		3AD211661FD924D50057E61D /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD211501FD924D40057E61D /* Models.scnassets */; };
+		3AD211671FD924D50057E61D /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211531FD924D40057E61D /* FocusSquare.swift */; };
+		3AD211681FD924D50057E61D /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211541FD924D40057E61D /* FocusSquareSegment.swift */; };
+		3AD211691FD924D50057E61D /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211561FD924D40057E61D /* Gesture.swift */; };
+		3AD2116A1FD924D50057E61D /* SingleFingerGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211571FD924D40057E61D /* SingleFingerGesture.swift */; };
+		3AD2116B1FD924D50057E61D /* TwoFingerGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211581FD924D40057E61D /* TwoFingerGesture.swift */; };
+		3AD2116C1FD924D50057E61D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211591FD924D40057E61D /* Plane.swift */; };
+		3AD2116E1FD924D50057E61D /* VirtualObjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2115C1FD924D40057E61D /* VirtualObjectSelectionViewController.swift */; };
+		3AD2116F1FD924D50057E61D /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2115E1FD924D40057E61D /* VirtualObject.swift */; };
+		3AD211701FD924D50057E61D /* VirtualObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2115F1FD924D40057E61D /* VirtualObjectManager.swift */; };
+		3AD211711FD924D50057E61D /* VirtualObjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD211601FD924D40057E61D /* VirtualObjects.json */; };
+		3AD211721FD924D50057E61D /* ARSCNView+HitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211621FD924D40057E61D /* ARSCNView+HitTests.swift */; };
+		3AD211731FD924D50057E61D /* SceneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211631FD924D40057E61D /* SceneExtensions.swift */; };
+		3AD211751FD924D50057E61D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211651FD924D40057E61D /* Utilities.swift */; };
+		3AD211771FD9285A0057E61D /* ARExampleViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211761FD9285A0057E61D /* ARExampleViewController+Actions.swift */; };
+		3AD211791FD931CC0057E61D /* ARExampleViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD211781FD931CC0057E61D /* ARExampleViewController+ObjectSelection.swift */; };
+		3AD2117B1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2117A1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift */; };
+		3AD2117D1FD96C870057E61D /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2117C1FD96C870057E61D /* TextManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +81,27 @@
 		3A56954A1FCE9EFC00116218 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		3A5695501FCFE16300116218 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A5695521FCFE31D00116218 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		3AD211491FD923C20057E61D /* ARExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARExampleViewController.h; sourceTree = "<group>"; };
+		3AD2114A1FD923C20057E61D /* ARExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARExampleViewController.m; sourceTree = "<group>"; };
+		3AD2114D1FD924A60057E61D /* ARExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARExampleViewController.swift; sourceTree = "<group>"; };
+		3AD211501FD924D40057E61D /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		3AD211531FD924D40057E61D /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		3AD211541FD924D40057E61D /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		3AD211561FD924D40057E61D /* Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		3AD211571FD924D40057E61D /* SingleFingerGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFingerGesture.swift; sourceTree = "<group>"; };
+		3AD211581FD924D40057E61D /* TwoFingerGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFingerGesture.swift; sourceTree = "<group>"; };
+		3AD211591FD924D40057E61D /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		3AD2115C1FD924D40057E61D /* VirtualObjectSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelectionViewController.swift; sourceTree = "<group>"; };
+		3AD2115E1FD924D40057E61D /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		3AD2115F1FD924D40057E61D /* VirtualObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectManager.swift; sourceTree = "<group>"; };
+		3AD211601FD924D40057E61D /* VirtualObjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VirtualObjects.json; sourceTree = "<group>"; };
+		3AD211621FD924D40057E61D /* ARSCNView+HitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARSCNView+HitTests.swift"; sourceTree = "<group>"; };
+		3AD211631FD924D40057E61D /* SceneExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneExtensions.swift; sourceTree = "<group>"; };
+		3AD211651FD924D40057E61D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3AD211761FD9285A0057E61D /* ARExampleViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARExampleViewController+Actions.swift"; sourceTree = "<group>"; };
+		3AD211781FD931CC0057E61D /* ARExampleViewController+ObjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARExampleViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		3AD2117A1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARExampleViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		3AD2117C1FD96C870057E61D /* TextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +187,7 @@
 		3A56952F1FCE94FB00116218 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				3AD2111B1FD9203E0057E61D /* ARKitExample */,
 				3A5695431FCE995D00116218 /* CameraBufferToTexture */,
 				3A5695341FCE95B100116218 /* CoreMotionAndPanorama */,
 			);
@@ -155,6 +197,7 @@
 		3A5695301FCE950200116218 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				3AD2114C1FD924920057E61D /* ARExample */,
 				3A5695511FCFE30100116218 /* MapKit */,
 			);
 			path = Items;
@@ -191,6 +234,97 @@
 				3A5695521FCFE31D00116218 /* MapKitViewController.swift */,
 			);
 			path = MapKit;
+			sourceTree = "<group>";
+		};
+		3AD2111B1FD9203E0057E61D /* ARKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211491FD923C20057E61D /* ARExampleViewController.h */,
+				3AD2114A1FD923C20057E61D /* ARExampleViewController.m */,
+			);
+			path = ARKitExample;
+			sourceTree = "<group>";
+		};
+		3AD2114C1FD924920057E61D /* ARExample */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2114D1FD924A60057E61D /* ARExampleViewController.swift */,
+				3AD211761FD9285A0057E61D /* ARExampleViewController+Actions.swift */,
+				3AD211781FD931CC0057E61D /* ARExampleViewController+ObjectSelection.swift */,
+				3AD2117A1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift */,
+				3AD2115A1FD924D40057E61D /* Additional View Controllers */,
+				3AD2114F1FD924D40057E61D /* Resources */,
+				3AD211511FD924D40057E61D /* UI Elements */,
+				3AD211611FD924D40057E61D /* Utilities */,
+				3AD2115D1FD924D40057E61D /* Virtual Objects */,
+			);
+			path = ARExample;
+			sourceTree = "<group>";
+		};
+		3AD2114F1FD924D40057E61D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211501FD924D40057E61D /* Models.scnassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AD211511FD924D40057E61D /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211521FD924D40057E61D /* Focus Squares */,
+				3AD211551FD924D40057E61D /* Gestures */,
+				3AD211591FD924D40057E61D /* Plane.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		3AD211521FD924D40057E61D /* Focus Squares */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211531FD924D40057E61D /* FocusSquare.swift */,
+				3AD211541FD924D40057E61D /* FocusSquareSegment.swift */,
+			);
+			path = "Focus Squares";
+			sourceTree = "<group>";
+		};
+		3AD211551FD924D40057E61D /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211561FD924D40057E61D /* Gesture.swift */,
+				3AD211571FD924D40057E61D /* SingleFingerGesture.swift */,
+				3AD211581FD924D40057E61D /* TwoFingerGesture.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		3AD2115A1FD924D40057E61D /* Additional View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2115C1FD924D40057E61D /* VirtualObjectSelectionViewController.swift */,
+			);
+			path = "Additional View Controllers";
+			sourceTree = "<group>";
+		};
+		3AD2115D1FD924D40057E61D /* Virtual Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2115E1FD924D40057E61D /* VirtualObject.swift */,
+				3AD2115F1FD924D40057E61D /* VirtualObjectManager.swift */,
+				3AD211601FD924D40057E61D /* VirtualObjects.json */,
+			);
+			path = "Virtual Objects";
+			sourceTree = "<group>";
+		};
+		3AD211611FD924D40057E61D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3AD211621FD924D40057E61D /* ARSCNView+HitTests.swift */,
+				3AD211631FD924D40057E61D /* SceneExtensions.swift */,
+				3AD2117C1FD96C870057E61D /* TextManager.swift */,
+				3AD211651FD924D40057E61D /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +371,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = devliubo;
 				TargetAttributes = {
 					3A5694FB1FCE909E00116218 = {
@@ -286,6 +420,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD211711FD924D50057E61D /* VirtualObjects.json in Resources */,
+				3AD211661FD924D50057E61D /* Models.scnassets in Resources */,
 				3A56952A1FCE927000116218 /* LaunchScreen.storyboard in Resources */,
 				3A5695271FCE927000116218 /* Assets.xcassets in Resources */,
 			);
@@ -300,6 +436,7 @@
 			files = (
 				3A5695041FCE909E00116218 /* ViewController.m in Sources */,
 				3A5695461FCE997800116218 /* CameraBufferToTexture.m in Sources */,
+				3AD2114B1FD923C20057E61D /* ARExampleViewController.m in Sources */,
 				3A5695401FCE961400116218 /* MotionAndPanorama.m in Sources */,
 				3A56950F1FCE909E00116218 /* main.m in Sources */,
 				3A5695011FCE909E00116218 /* AppDelegate.m in Sources */,
@@ -312,9 +449,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD2116E1FD924D50057E61D /* VirtualObjectSelectionViewController.swift in Sources */,
+				3AD211721FD924D50057E61D /* ARSCNView+HitTests.swift in Sources */,
+				3AD2116B1FD924D50057E61D /* TwoFingerGesture.swift in Sources */,
+				3AD211771FD9285A0057E61D /* ARExampleViewController+Actions.swift in Sources */,
+				3AD2116A1FD924D50057E61D /* SingleFingerGesture.swift in Sources */,
+				3AD211791FD931CC0057E61D /* ARExampleViewController+ObjectSelection.swift in Sources */,
+				3AD211751FD924D50057E61D /* Utilities.swift in Sources */,
+				3AD2117B1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift in Sources */,
+				3AD2116C1FD924D50057E61D /* Plane.swift in Sources */,
+				3AD2116F1FD924D50057E61D /* VirtualObject.swift in Sources */,
+				3AD211701FD924D50057E61D /* VirtualObjectManager.swift in Sources */,
+				3AD211691FD924D50057E61D /* Gesture.swift in Sources */,
+				3AD2117D1FD96C870057E61D /* TextManager.swift in Sources */,
 				3A5695531FCFE31D00116218 /* MapKitViewController.swift in Sources */,
+				3AD211681FD924D50057E61D /* FocusSquareSegment.swift in Sources */,
 				3A5695221FCE927000116218 /* ViewController.swift in Sources */,
+				3AD2114E1FD924A60057E61D /* ARExampleViewController.swift in Sources */,
 				3A5695201FCE927000116218 /* AppDelegate.swift in Sources */,
+				3AD211731FD924D50057E61D /* SceneExtensions.swift in Sources */,
+				3AD211671FD924D50057E61D /* FocusSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S7C53EU56;
 				INFOPLIST_FILE = DigitalImageDemonstration_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -494,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7S7C53EU56;
 				INFOPLIST_FILE = DigitalImageDemonstration_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

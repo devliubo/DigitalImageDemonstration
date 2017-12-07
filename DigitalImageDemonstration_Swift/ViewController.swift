@@ -32,9 +32,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func initTableData() {
         
-        let sec1Title = "MapKit"
-        let sec1CellTitles = ["MapKitViewController"]
-        let sec1ClassNames: Array<UIViewController.Type> = [MapKitViewController.self]
+        let sec1Title = "Example"
+        let sec1CellTitles = ["MapKitViewController",
+                              "ARExampleViewController"]
+        let sec1ClassNames: Array<UIViewController.Type> = [MapKitViewController.self,
+                                                            ARExampleViewController.self]
         
         sections = [sec1Title]
         titles = [sec1CellTitles]
