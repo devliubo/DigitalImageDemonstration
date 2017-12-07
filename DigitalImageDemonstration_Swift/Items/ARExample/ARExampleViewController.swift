@@ -82,7 +82,7 @@ class ARExampleViewController: UIViewController {
             // Start the ARSession.
             resetTracking()
         } else {
-            displayErrorMessage(title: "Unsupported platform", message: sessionErrorMsg, allowRestart: false)
+            displayErrorMessage(title: "Unsupported platform", message: "Unsupported platform", allowRestart: false)
         }
     }
     
