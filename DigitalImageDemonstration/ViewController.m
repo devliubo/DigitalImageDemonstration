@@ -80,7 +80,7 @@
 - (void)initTitles
 {
     NSString *sec1Title = @"Core Motion";
-    NSArray *sec1CellTitles = @[@"CoreMotionAndPanorama"];
+    NSArray *sec1CellTitles = @[@"CoreMotionAndPanorama", @"ARExampleViewController"];
     NSArray *section1 = @[sec1Title, sec1CellTitles];
     
     NSString *sec2Title = @"AVFoundation";
@@ -92,7 +92,7 @@
 
 - (void)initClassNames
 {
-    NSArray *sec1ClassNames = @[@"CoreMotionAndPanorama"];
+    NSArray *sec1ClassNames = @[@"CoreMotionAndPanorama", @"ARExampleViewController"];
     
     NSArray *sec2ClassNames = @[@"CameraBufferToTexture"];
     
@@ -139,6 +139,7 @@
     self.navigationController.navigationBarHidden       = NO;
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.toolbarHidden             = YES;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 @end

@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A16AD42202B3E8500DACF82 /* ARLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD2C202B3E8500DACF82 /* ARLocationViewController.swift */; };
+		3A16AD43202B3E8500DACF82 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD2E202B3E8500DACF82 /* compass.png */; };
+		3A16AD44202B3E8500DACF82 /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD2F202B3E8500DACF82 /* compass@2x.png */; };
+		3A16AD45202B3E8500DACF82 /* compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD30202B3E8500DACF82 /* compass@3x.png */; };
+		3A16AD46202B3E8500DACF82 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD31202B3E8500DACF82 /* pin.png */; };
+		3A16AD47202B3E8500DACF82 /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD32202B3E8500DACF82 /* pin@2x.png */; };
+		3A16AD48202B3E8500DACF82 /* pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD33202B3E8500DACF82 /* pin@3x.png */; };
+		3A16AD49202B3E8500DACF82 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD34202B3E8500DACF82 /* user.png */; };
+		3A16AD4A202B3E8500DACF82 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD35202B3E8500DACF82 /* user@2x.png */; };
+		3A16AD4B202B3E8500DACF82 /* user@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD36202B3E8500DACF82 /* user@3x.png */; };
+		3A16AD4C202B3E8500DACF82 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD38202B3E8500DACF82 /* CGPoint+Extensions.swift */; };
+		3A16AD4D202B3E8500DACF82 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD39202B3E8500DACF82 /* CLLocation+Extensions.swift */; };
+		3A16AD4E202B3E8500DACF82 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3A202B3E8500DACF82 /* FloatingPoint+Radians.swift */; };
+		3A16AD4F202B3E8500DACF82 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3B202B3E8500DACF82 /* LocationManager.swift */; };
+		3A16AD50202B3E8500DACF82 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3C202B3E8500DACF82 /* LocationNode.swift */; };
+		3A16AD51202B3E8500DACF82 /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3D202B3E8500DACF82 /* SceneLocationEstimate+Extensions.swift */; };
+		3A16AD52202B3E8500DACF82 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3E202B3E8500DACF82 /* SceneLocationEstimate.swift */; };
+		3A16AD53202B3E8500DACF82 /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD3F202B3E8500DACF82 /* SceneLocationView.swift */; };
+		3A16AD54202B3E8500DACF82 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD40202B3E8500DACF82 /* SCNNode+Extensions.swift */; };
+		3A16AD55202B3E8500DACF82 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD41202B3E8500DACF82 /* SCNVector3+Extensions.swift */; };
+		3A16AD5E202B3EA400DACF82 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD57202B3EA400DACF82 /* arrow.png */; };
+		3A16AD5F202B3EA400DACF82 /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD58202B3EA400DACF82 /* destination.png */; };
+		3A16AD60202B3EA400DACF82 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD59202B3EA400DACF82 /* flag.png */; };
+		3A16AD61202B3EA400DACF82 /* lightbluepin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD5A202B3EA400DACF82 /* lightbluepin.png */; };
+		3A16AD62202B3EA400DACF82 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD5B202B3EA400DACF82 /* user.png */; };
+		3A16AD63202B3EA400DACF82 /* SceneNodeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */; };
 		3A5695011FCE909E00116218 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695001FCE909E00116218 /* AppDelegate.m */; };
 		3A5695041FCE909E00116218 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695031FCE909E00116218 /* ViewController.m */; };
 		3A5695091FCE909E00116218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5695081FCE909E00116218 /* Assets.xcassets */; };
@@ -47,6 +73,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A16AD2C202B3E8500DACF82 /* ARLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARLocationViewController.swift; sourceTree = "<group>"; };
+		3A16AD2E202B3E8500DACF82 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		3A16AD2F202B3E8500DACF82 /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@2x.png"; sourceTree = "<group>"; };
+		3A16AD30202B3E8500DACF82 /* compass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@3x.png"; sourceTree = "<group>"; };
+		3A16AD31202B3E8500DACF82 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		3A16AD32202B3E8500DACF82 /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
+		3A16AD33202B3E8500DACF82 /* pin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@3x.png"; sourceTree = "<group>"; };
+		3A16AD34202B3E8500DACF82 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		3A16AD35202B3E8500DACF82 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		3A16AD36202B3E8500DACF82 /* user@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@3x.png"; sourceTree = "<group>"; };
+		3A16AD38202B3E8500DACF82 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		3A16AD39202B3E8500DACF82 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		3A16AD3A202B3E8500DACF82 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		3A16AD3B202B3E8500DACF82 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3A16AD3C202B3E8500DACF82 /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		3A16AD3D202B3E8500DACF82 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		3A16AD3E202B3E8500DACF82 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		3A16AD3F202B3E8500DACF82 /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		3A16AD40202B3E8500DACF82 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		3A16AD41202B3E8500DACF82 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		3A16AD57202B3EA400DACF82 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		3A16AD58202B3EA400DACF82 /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
+		3A16AD59202B3EA400DACF82 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		3A16AD5A202B3EA400DACF82 /* lightbluepin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbluepin.png; sourceTree = "<group>"; };
+		3A16AD5B202B3EA400DACF82 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		3A16AD5C202B3EA400DACF82 /* SceneNodeCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneNodeCreator.h; sourceTree = "<group>"; };
+		3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneNodeCreator.m; sourceTree = "<group>"; };
 		3A5694FC1FCE909E00116218 /* DigitalImageDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalImageDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5694FF1FCE909E00116218 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A5695001FCE909E00116218 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +175,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A16AD2B202B3E8500DACF82 /* ARKit+CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				3A16AD2C202B3E8500DACF82 /* ARLocationViewController.swift */,
+				3A16AD37202B3E8500DACF82 /* Source */,
+				3A16AD2D202B3E8500DACF82 /* Images */,
+			);
+			path = "ARKit+CoreLocation";
+			sourceTree = "<group>";
+		};
+		3A16AD2D202B3E8500DACF82 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3A16AD2E202B3E8500DACF82 /* compass.png */,
+				3A16AD2F202B3E8500DACF82 /* compass@2x.png */,
+				3A16AD30202B3E8500DACF82 /* compass@3x.png */,
+				3A16AD31202B3E8500DACF82 /* pin.png */,
+				3A16AD32202B3E8500DACF82 /* pin@2x.png */,
+				3A16AD33202B3E8500DACF82 /* pin@3x.png */,
+				3A16AD34202B3E8500DACF82 /* user.png */,
+				3A16AD35202B3E8500DACF82 /* user@2x.png */,
+				3A16AD36202B3E8500DACF82 /* user@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3A16AD37202B3E8500DACF82 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3A16AD38202B3E8500DACF82 /* CGPoint+Extensions.swift */,
+				3A16AD39202B3E8500DACF82 /* CLLocation+Extensions.swift */,
+				3A16AD3A202B3E8500DACF82 /* FloatingPoint+Radians.swift */,
+				3A16AD3B202B3E8500DACF82 /* LocationManager.swift */,
+				3A16AD3C202B3E8500DACF82 /* LocationNode.swift */,
+				3A16AD3D202B3E8500DACF82 /* SceneLocationEstimate+Extensions.swift */,
+				3A16AD3E202B3E8500DACF82 /* SceneLocationEstimate.swift */,
+				3A16AD3F202B3E8500DACF82 /* SceneLocationView.swift */,
+				3A16AD40202B3E8500DACF82 /* SCNNode+Extensions.swift */,
+				3A16AD41202B3E8500DACF82 /* SCNVector3+Extensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3A16AD56202B3EA400DACF82 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3A16AD57202B3EA400DACF82 /* arrow.png */,
+				3A16AD58202B3EA400DACF82 /* destination.png */,
+				3A16AD59202B3EA400DACF82 /* flag.png */,
+				3A16AD5A202B3EA400DACF82 /* lightbluepin.png */,
+				3A16AD5B202B3EA400DACF82 /* user.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		3A5694F31FCE909E00116218 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +305,7 @@
 		3A5695301FCE950200116218 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				3A16AD2B202B3E8500DACF82 /* ARKit+CoreLocation */,
 				3AD2114C1FD924920057E61D /* ARExample */,
 				3A5695511FCFE30100116218 /* MapKit */,
 			);
@@ -241,6 +350,9 @@
 			children = (
 				3AD211491FD923C20057E61D /* ARExampleViewController.h */,
 				3AD2114A1FD923C20057E61D /* ARExampleViewController.m */,
+				3A16AD5C202B3EA400DACF82 /* SceneNodeCreator.h */,
+				3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */,
+				3A16AD56202B3EA400DACF82 /* image */,
 			);
 			path = ARKitExample;
 			sourceTree = "<group>";
@@ -409,10 +521,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A56953D1FCE95CE00116218 /* texturify_pano-2.jpg in Resources */,
+				3A16AD5E202B3EA400DACF82 /* arrow.png in Resources */,
 				3A56953B1FCE95CE00116218 /* texturify_pano-3.jpg in Resources */,
 				3A56950C1FCE909E00116218 /* LaunchScreen.storyboard in Resources */,
 				3A56953C1FCE95CE00116218 /* texturify_pano-1.jpg in Resources */,
+				3A16AD60202B3EA400DACF82 /* flag.png in Resources */,
+				3A16AD62202B3EA400DACF82 /* user.png in Resources */,
 				3A5695091FCE909E00116218 /* Assets.xcassets in Resources */,
+				3A16AD61202B3EA400DACF82 /* lightbluepin.png in Resources */,
+				3A16AD5F202B3EA400DACF82 /* destination.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,9 +538,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD211711FD924D50057E61D /* VirtualObjects.json in Resources */,
+				3A16AD4B202B3E8500DACF82 /* user@3x.png in Resources */,
+				3A16AD46202B3E8500DACF82 /* pin.png in Resources */,
+				3A16AD47202B3E8500DACF82 /* pin@2x.png in Resources */,
+				3A16AD4A202B3E8500DACF82 /* user@2x.png in Resources */,
+				3A16AD49202B3E8500DACF82 /* user.png in Resources */,
 				3AD211661FD924D50057E61D /* Models.scnassets in Resources */,
 				3A56952A1FCE927000116218 /* LaunchScreen.storyboard in Resources */,
 				3A5695271FCE927000116218 /* Assets.xcassets in Resources */,
+				3A16AD45202B3E8500DACF82 /* compass@3x.png in Resources */,
+				3A16AD43202B3E8500DACF82 /* compass.png in Resources */,
+				3A16AD44202B3E8500DACF82 /* compass@2x.png in Resources */,
+				3A16AD48202B3E8500DACF82 /* pin@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +568,7 @@
 				3A5695011FCE909E00116218 /* AppDelegate.m in Sources */,
 				3A5695371FCE95B100116218 /* CoreMotionAndPanorama.m in Sources */,
 				3A5695491FCE99AB00116218 /* CameraBufferToTextureView.m in Sources */,
+				3A16AD63202B3EA400DACF82 /* SceneNodeCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +578,9 @@
 			files = (
 				3AD2116E1FD924D50057E61D /* VirtualObjectSelectionViewController.swift in Sources */,
 				3AD211721FD924D50057E61D /* ARSCNView+HitTests.swift in Sources */,
+				3A16AD4F202B3E8500DACF82 /* LocationManager.swift in Sources */,
+				3A16AD53202B3E8500DACF82 /* SceneLocationView.swift in Sources */,
+				3A16AD4D202B3E8500DACF82 /* CLLocation+Extensions.swift in Sources */,
 				3AD2116B1FD924D50057E61D /* TwoFingerGesture.swift in Sources */,
 				3AD211771FD9285A0057E61D /* ARExampleViewController+Actions.swift in Sources */,
 				3AD2116A1FD924D50057E61D /* SingleFingerGesture.swift in Sources */,
@@ -459,14 +589,22 @@
 				3AD2117B1FD9320C0057E61D /* ARExampleViewController+ARSCNViewDelegate.swift in Sources */,
 				3AD2116C1FD924D50057E61D /* Plane.swift in Sources */,
 				3AD2116F1FD924D50057E61D /* VirtualObject.swift in Sources */,
+				3A16AD50202B3E8500DACF82 /* LocationNode.swift in Sources */,
+				3A16AD51202B3E8500DACF82 /* SceneLocationEstimate+Extensions.swift in Sources */,
 				3AD211701FD924D50057E61D /* VirtualObjectManager.swift in Sources */,
+				3A16AD55202B3E8500DACF82 /* SCNVector3+Extensions.swift in Sources */,
 				3AD211691FD924D50057E61D /* Gesture.swift in Sources */,
+				3A16AD42202B3E8500DACF82 /* ARLocationViewController.swift in Sources */,
+				3A16AD54202B3E8500DACF82 /* SCNNode+Extensions.swift in Sources */,
 				3AD2117D1FD96C870057E61D /* TextManager.swift in Sources */,
 				3A5695531FCFE31D00116218 /* MapKitViewController.swift in Sources */,
 				3AD211681FD924D50057E61D /* FocusSquareSegment.swift in Sources */,
+				3A16AD4E202B3E8500DACF82 /* FloatingPoint+Radians.swift in Sources */,
 				3A5695221FCE927000116218 /* ViewController.swift in Sources */,
 				3AD2114E1FD924A60057E61D /* ARExampleViewController.swift in Sources */,
+				3A16AD4C202B3E8500DACF82 /* CGPoint+Extensions.swift in Sources */,
 				3A5695201FCE927000116218 /* AppDelegate.swift in Sources */,
+				3A16AD52202B3E8500DACF82 /* SceneLocationEstimate.swift in Sources */,
 				3AD211731FD924D50057E61D /* SceneExtensions.swift in Sources */,
 				3AD211671FD924D50057E61D /* FocusSquare.swift in Sources */,
 			);
