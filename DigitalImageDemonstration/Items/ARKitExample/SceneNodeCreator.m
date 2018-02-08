@@ -34,7 +34,7 @@
     SCNBox *route = [SCNBox boxWithWidth:width height:height length:length chamferRadius:chamferRadius];
     route.firstMaterial.diffuse.contents = [UIColor colorWithRed:210.0/255.0 green:217.0/255.0 blue:66.0/255.0 alpha:1.0];
     
-    SCNVector3 midPosition = SCNVector3Make((position1.x+position2.x)/2.0, -1.0, (position1.z+position2.z)/2.0);
+    SCNVector3 midPosition = SCNVector3Make((position1.x+position2.x)/2.0, -5.0, (position1.z+position2.z)/2.0);
     
     SCNNode *node = [SCNNode nodeWithGeometry:route];
     node.position = midPosition;

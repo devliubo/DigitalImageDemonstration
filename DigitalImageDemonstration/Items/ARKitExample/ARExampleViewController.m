@@ -8,6 +8,7 @@
 
 #import "ARExampleViewController.h"
 #import "SceneNodeCreator.h"
+#import "CoordianteUtilities.h"
 
 #pragma mark - CoordiantePoint
 
@@ -87,15 +88,23 @@
 
 - (void)initProperties {
     NSMutableArray *points = [[NSMutableArray alloc] init];
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993184 longitude:116.474674]];//116.474674,39.993184
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.991343 longitude:116.477495]];//116.477495,39.991343
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993982 longitude:116.480467]];//116.480467,39.993982
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.995872 longitude:116.477646]];//116.477646,39.995872
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.997335 longitude:116.475403]];//116.475403,39.997335
-    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.994648 longitude:116.472421]];//116.472421,39.994648
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993184 longitude:116.474674]];//116.474674,39.993184
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.991343 longitude:116.477495]];//116.477495,39.991343
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993982 longitude:116.480467]];//116.480467,39.993982
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.995872 longitude:116.477646]];//116.477646,39.995872
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.997335 longitude:116.475403]];//116.475403,39.997335
+//    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.994648 longitude:116.472421]];//116.472421,39.994648
+
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993033 longitude:116.473383]];//116.473383, 39.993033
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.992949 longitude:116.473285]];//116.473285, 39.992949
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.992814 longitude:116.473505]];//116.473505, 39.992814
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993047 longitude:116.473752]];//116.473752, 39.993047
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993089 longitude:116.473697]];//116.473697, 39.993089
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993173 longitude:116.473807]];//116.473807, 39.993173
+    [points addObject:[CoordiantePoint coordiantePointWithLatitude:39.993674 longitude:116.473029]];//116.473029, 39.993674
     
     self.pathPoints = @[points];
-    self.currentPoint = [CoordiantePoint coordiantePointWithLatitude:39.993415 longitude:116.474266];//116.474266,39.993415
+    self.currentPoint = [points firstObject];
     
     [self buildWorldPositionFromPathPoints];
 }
@@ -146,7 +155,7 @@
     
     if (self.currentPosition != nil) {
         SCNVector3 position = SCNVector3Make(self.currentPosition.x, self.currentPosition.y, self.currentPosition.z);
-        SCNNode *currentNode = [SceneNodeCreator imageNodeWithImage:[UIImage imageNamed:@"destination"] position:position width:10 height:10];
+        SCNNode *currentNode = [SceneNodeCreator imageNodeWithImage:[UIImage imageNamed:@"destination"] position:position width:1 height:1];
         currentNode.scale = SCNVector3Make(1, 1, 1);
         [scene.rootNode addChildNode:currentNode];
     }
@@ -178,19 +187,80 @@
 }
 
 - (WorldPosition *)convertCoordiantePointToWorldPosition:(CoordiantePoint *)point basePoint:(CoordiantePoint *)basePoint {
-    double factor = [self metersPerLongitudeAtLatitude:((point.latitude + basePoint.latitude)/2.0)]/8.0;
     
-    WorldPosition *worldPosition = [[WorldPosition alloc] init];
-    worldPosition.x = (point.longitude - basePoint.longitude) * factor;
-    worldPosition.y = 0;
-    worldPosition.z = -1.0 * (point.latitude - basePoint.latitude) * factor;
+    WorldPosition *result = [[WorldPosition alloc] init];
     
-    return worldPosition;
+    CLLocation *originLocation = [[CLLocation alloc] initWithLatitude:basePoint.latitude longitude:basePoint.longitude];
+    CLLocation *desLocation = [[CLLocation alloc] initWithLatitude:point.latitude longitude:point.longitude];
+    simd_float4x4 transform = [CoordianteUtilities transformMatrix:matrix_identity_float4x4 originLocation:originLocation desLocation:desLocation];
+    SCNVector3 position = [CoordianteUtilities positionFromTransform:transform];
+    
+    result.x = position.x;
+    result.y = position.y;
+    result.z = position.z;
+    return result;
 }
 
-- (double)metersPerLongitudeAtLatitude:(double)latitude {
-#define kEarthCircle        40075016.6855785724052f
-    return kEarthCircle / 360.0 * cos(latitude * M_PI / 180.f);
+#pragma mark - ARSessionDelegate
+
+- (void)session:(ARSession *)session didUpdateFrame:(ARFrame *)frame {
+//    NSLog(@"didUpdateFrame");
+}
+
+- (void)session:(ARSession *)session didAddAnchors:(NSArray<ARAnchor*>*)anchors {
+    NSLog(@"didAddAnchors");
+}
+
+- (void)session:(ARSession *)session didUpdateAnchors:(NSArray<ARAnchor*>*)anchors {
+    NSLog(@"didUpdateAnchors");
+}
+
+- (void)session:(ARSession *)session didRemoveAnchors:(NSArray<ARAnchor*>*)anchors {
+    NSLog(@"didRemoveAnchors");
+}
+
+#pragma mark - ARSessionObserver
+
+- (void)session:(ARSession *)session didFailWithError:(NSError *)error {
+    NSLog(@"didFailWithError");
+}
+
+- (void)session:(ARSession *)session cameraDidChangeTrackingState:(ARCamera *)camera {
+    NSLog(@"cameraDidChangeTrackingState");
+}
+
+- (void)sessionWasInterrupted:(ARSession *)session {
+    NSLog(@"sessionWasInterrupted");
+}
+
+- (void)sessionInterruptionEnded:(ARSession *)session {
+    NSLog(@"sessionInterruptionEnded");
+}
+
+- (void)session:(ARSession *)session didOutputAudioSampleBuffer:(CMSampleBufferRef)audioSampleBuffer {
+    NSLog(@"didOutputAudioSampleBuffer");
+}
+
+#pragma mark - ARSCNViewDelegate
+
+//- (nullable SCNNode *)renderer:(id <SCNSceneRenderer>)renderer nodeForAnchor:(ARAnchor *)anchor {
+//
+//}
+
+- (void)renderer:(id <SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    NSLog(@"didAddNode");
+}
+
+- (void)renderer:(id <SCNSceneRenderer>)renderer willUpdateNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    NSLog(@"willUpdateNode");
+}
+
+- (void)renderer:(id <SCNSceneRenderer>)renderer didUpdateNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    NSLog(@"didUpdateNode");
+}
+
+- (void)renderer:(id <SCNSceneRenderer>)renderer didRemoveNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    NSLog(@"didRemoveNode");
 }
 
 @end

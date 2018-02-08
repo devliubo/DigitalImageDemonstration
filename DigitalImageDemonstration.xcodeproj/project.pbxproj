@@ -33,6 +33,7 @@
 		3A16AD61202B3EA400DACF82 /* lightbluepin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD5A202B3EA400DACF82 /* lightbluepin.png */; };
 		3A16AD62202B3EA400DACF82 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A16AD5B202B3EA400DACF82 /* user.png */; };
 		3A16AD63202B3EA400DACF82 /* SceneNodeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */; };
+		3A16AD66202C93D900DACF82 /* CoordianteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A16AD64202C93D800DACF82 /* CoordianteUtilities.m */; };
 		3A5695011FCE909E00116218 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695001FCE909E00116218 /* AppDelegate.m */; };
 		3A5695041FCE909E00116218 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5695031FCE909E00116218 /* ViewController.m */; };
 		3A5695091FCE909E00116218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5695081FCE909E00116218 /* Assets.xcassets */; };
@@ -100,6 +101,8 @@
 		3A16AD5B202B3EA400DACF82 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		3A16AD5C202B3EA400DACF82 /* SceneNodeCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneNodeCreator.h; sourceTree = "<group>"; };
 		3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneNodeCreator.m; sourceTree = "<group>"; };
+		3A16AD64202C93D800DACF82 /* CoordianteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordianteUtilities.m; sourceTree = "<group>"; };
+		3A16AD65202C93D900DACF82 /* CoordianteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordianteUtilities.h; sourceTree = "<group>"; };
 		3A5694FC1FCE909E00116218 /* DigitalImageDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalImageDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5694FF1FCE909E00116218 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A5695001FCE909E00116218 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -352,6 +355,8 @@
 				3AD2114A1FD923C20057E61D /* ARExampleViewController.m */,
 				3A16AD5C202B3EA400DACF82 /* SceneNodeCreator.h */,
 				3A16AD5D202B3EA400DACF82 /* SceneNodeCreator.m */,
+				3A16AD65202C93D900DACF82 /* CoordianteUtilities.h */,
+				3A16AD64202C93D800DACF82 /* CoordianteUtilities.m */,
 				3A16AD56202B3EA400DACF82 /* image */,
 			);
 			path = ARKitExample;
@@ -566,6 +571,7 @@
 				3A5695401FCE961400116218 /* MotionAndPanorama.m in Sources */,
 				3A56950F1FCE909E00116218 /* main.m in Sources */,
 				3A5695011FCE909E00116218 /* AppDelegate.m in Sources */,
+				3A16AD66202C93D900DACF82 /* CoordianteUtilities.m in Sources */,
 				3A5695371FCE95B100116218 /* CoreMotionAndPanorama.m in Sources */,
 				3A5695491FCE99AB00116218 /* CameraBufferToTextureView.m in Sources */,
 				3A16AD63202B3EA400DACF82 /* SceneNodeCreator.m in Sources */,
@@ -743,7 +749,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7S7C53EU56;
 				INFOPLIST_FILE = DigitalImageDemonstration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devliubo.DigitalImageDemonstration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -758,7 +764,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7S7C53EU56;
 				INFOPLIST_FILE = DigitalImageDemonstration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devliubo.DigitalImageDemonstration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
