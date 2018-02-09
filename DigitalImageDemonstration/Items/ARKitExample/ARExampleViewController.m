@@ -40,7 +40,7 @@
 
 #pragma mark - ARExampleViewController
 
-@interface ARExampleViewController ()<ARSessionDelegate, ARSCNViewDelegate>
+@interface ARExampleViewController ()<ARSessionDelegate, ARSCNViewDelegate, SCNSceneRendererDelegate, ARSessionObserver>
 
 @property (nonatomic, strong) ARSCNView *sceneView;
 @property (nonatomic, strong) ARWorldTrackingConfiguration *config;
@@ -126,7 +126,7 @@
     self.config.worldAlignment = ARWorldAlignmentGravityAndHeading;
     
     //Other
-    self.sceneView.debugOptions = ARSCNDebugOptionShowFeaturePoints;
+//    self.sceneView.debugOptions = ARSCNDebugOptionShowFeaturePoints;
 }
 
 #pragma mark - Scene
@@ -226,7 +226,7 @@
 }
 
 - (void)session:(ARSession *)session cameraDidChangeTrackingState:(ARCamera *)camera {
-    NSLog(@"cameraDidChangeTrackingState");
+    NSLog(@"cameraDidChangeTrackingState:%ld", (long)camera.trackingState);
 }
 
 - (void)sessionWasInterrupted:(ARSession *)session {

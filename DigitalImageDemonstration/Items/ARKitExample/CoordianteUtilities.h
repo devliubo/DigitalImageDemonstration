@@ -14,9 +14,9 @@
 @interface CoordianteUtilities : NSObject
 
 + (SCNVector3)positionFromTransform:(matrix_float4x4)transform;
-+ (matrix_float4x4)translationMatrix:(matrix_float4x4)originMatrix translation:(vector_float4)translation;
-+ (matrix_float4x4)rotateAroundY:(matrix_float4x4)originMatrix rotateDegree:(double)degree;
++ (simd_float4x4)translationMatrix:(matrix_float4x4)originMatrix translation:(vector_float4)translation;
++ (simd_float4x4)rotateAroundY:(matrix_float4x4)originMatrix rotateDegree:(double)degree;
 + (simd_float4x4)transformMatrix:(simd_float4x4)originMatrix originLocation:(CLLocation *)originLocation desLocation:(CLLocation *)desLocation;
-+ (double)bearingRadianBetweenLocation:(CLLocation *)fromLocation toLocation:(CLLocation *)toLocation;
++ (double)bearingRadianBetweenLocation:(CLLocationCoordinate2D)fromLocation toLocation:(CLLocationCoordinate2D)toLocation;
 
 @end
